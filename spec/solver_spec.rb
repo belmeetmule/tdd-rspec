@@ -41,5 +41,21 @@ describe Solver do
         expect(solver.reverse(5))
       end.to raise_error('Not A String Error')
     end
+    #fizzbuzz tests
+    context 'When fizzbuzz method is called' do
+      solver = Solver.new
+    it 'should return fizz when N is divisible by 3' do
+      expect(solver.fizzbuzz(6)).to match('fizz')
+    end
+    it 'should return buzz when N is divisible by 5' do
+      expect(solver.fizzbuzz(10)).to match('buzz')
+    end
+    it 'should return fizzbuzz when N is divisible by 3 and 5' do
+      expect(solver.fizzbuzz(15)).to match('fizzbuzz')
+      end
+    it 'should return \'N\' when N doesn\'t match the above conditions' do
+      expect(solver.fizzbuzz(22)).to match('22')
+     end
+    end
   end
 end
