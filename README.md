@@ -79,14 +79,14 @@
 
 #### 2 - Clone the repository.
 ```
-git clone https://github.com/iAmWaris97/test-driven-development.git
+git clone https://github.com/belmeetmule/tdd-rspec.git
 ```
 
 ### Usage
 
 #### 3 - run the project
 ```
-later
+rspec spec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
